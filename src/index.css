@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Rejouice Headline";
+  src: local("Rejouice Headline"), url(./fonts/MyFont.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Nippo Variable";
+  src: local("Nippo Variable"), url(./fonts/MyFont.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "MPS Sans Expressive";
+  src: local("MPS Sans Expressive"), url(./fonts/MyFont.ttf) format("ttf");
+}
+@font-face {
+  font-family: "MPS Sans Pixel";
+  src: local("MPS Sans Pixel"), url(./fonts/MyFont.ttf) format("ttf");
+}
+
+.logo span {
+  font-family: "MPS Sans Expressive";
+}
+
+ul {
+  font-family: "MPS Sans Pixel";
+}
+
+#home {
+  font-family: "MPS Sans Pixel";
+}
+
+.skill {
+  font-family: "MPS Sans Pixel";
+}
+
+#hello {
+  font-family: "Playwrite AR", sans-serif;
+}
+
+#aboutdata {
+  font-family: "MPS Sans Pixel", sans-serif;
+}
