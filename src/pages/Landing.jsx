@@ -81,10 +81,10 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-between items-center px-10 relative overflow-hidden">
+    <div className="w-full flex flex-col pt-[5rem] sm:flex-row sm:justify-between sm:items-center px-5 md:px-10 relative overflow-hidden">
       <div
         ref={box1}
-        className="flex  w-[20vw] flex-col font-['MPS_Sans_Pixel'] text-xl bg-black rounded text-white py-2 pl-4 pr-6  relative left-[-1.5rem]"
+        className="flex min-w-[20vw] flex-col font-['MPS_Sans_Pixel'] text-xl bg-black rounded text-white py-2 pl-4 pr-6  relative md:left-[-1.5rem]"
       >
         <span className="mb-5">
           <svg
@@ -103,8 +103,8 @@ const Landing = () => {
             />
           </svg>
         </span>
-        <ScrambleAnimate content={"From"} />
-        <ScrambleAnimate content={"Bengaluru, India"} />
+        <ScrambleAnimate content={"From"} styleData={"text-xl"} />
+        <ScrambleAnimate content={"Bengaluru, India"} styleData={"text-xl"} />
       </div>
       <div className=" h-[80vh] flex items-center justify-center relative">
         <div
@@ -112,14 +112,17 @@ const Landing = () => {
           id="hello"
         >
           {/* <span className="font-['Noto_Sans_Devanagri']">नमस्ते</span> */}
-          <ScrambleAnimate content="Hello" styleData={"z-10"} />
+          <ScrambleAnimate
+            content="Hello"
+            styleData={"z-10 text-4xl md:text-5xl"}
+          />
           {/* <span>Hola</span>
           <span>Ciao</span> */}
         </div>
         <motion.img
           src={main4}
           alt="img"
-          className="h-full"
+          className=" aspect-[5/6] object-cover w-full h-full"
           initial={{ z: 0 }}
           animate={{ rotateZ: 360 }}
           transition={{ repeat: Infinity, duration: 15 }}
@@ -127,7 +130,7 @@ const Landing = () => {
       </div>
       <div
         ref={box2}
-        className="flex w-[20vw] flex-col font-['MPS_Sans_Pixel'] rounded justify-center text-xl items-start bg-gray-200 p-2 relative right-[-1.5rem]"
+        className="flex min-w-[20vw] flex-col font-['MPS_Sans_Pixel'] rounded justify-center text-xl items-start bg-gray-200 py-2 px-4  relative md:right-[-1.5rem]"
       >
         <span className="mb-5">
           <svg
@@ -146,8 +149,11 @@ const Landing = () => {
             />
           </svg>
         </span>
-        <ScrambleAnimate content={"Ui/Ux Designer"} />
-        <ScrambleAnimate content={"Full-Stack Developer"} />
+        <ScrambleAnimate content={"Ui/Ux"} styleData={"text-xl"} />
+        <ScrambleAnimate
+          content={"Full-Stack Developer"}
+          styleData={"text-xl"}
+        />
       </div>
     </div>
   );
