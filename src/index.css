@@ -12,17 +12,17 @@
 }
 
 @font-face {
-  font-family: "Nippo Variable";
-  src: local("Nippo Variable"), url(./fonts/MyFont.ttf) format("ttf");
-}
-
-@font-face {
   font-family: "MPS Sans Expressive";
-  src: url(./fonts/gfb9NgjXjiSNyuc0GSm78K8vJc.ttf) format("truetype");
+  src: url("/fonts/gfb9NgjXjiSNyuc0GSm78K8vJc.ttf") format("truetype");
 }
 @font-face {
   font-family: "MPS Sans Pixel";
-  src: url(./fonts/KUJdvGYsGxlU0r59P9m11lAWw.ttf) format("truetype");
+  src: url("/fonts/KUJdvGYsGxlU0r59P9m11lAWw.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nippo Variable";
+  src: local("Nippo Variable"), url(./fonts/MyFont.ttf) format("ttf");
 }
 
 .logo span {
