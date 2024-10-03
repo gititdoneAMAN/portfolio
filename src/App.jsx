@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Marqee from "./components/Marqee";
@@ -7,6 +6,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import Projects from "./pages/Projects";
 import Eyes from "./components/Eyes";
 import Bento from "./pages/Bento";
+import Footer from "./components/Footer";
+import Skills from "./pages/Skills";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -18,8 +19,10 @@ const App = () => {
       <Marqee />
       <Bento />
       {/* <About /> */}
+      <Skills />
       <Projects />
-      {/* <Eyes /> */}
+      <Eyes />
+      <Footer />
     </div>
   );
 };
