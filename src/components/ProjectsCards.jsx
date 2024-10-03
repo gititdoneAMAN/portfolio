@@ -67,7 +67,7 @@ const ProjectsCards = ({
   }, []);
 
   return (
-    <div className="grid grid-cols-2 px-10 gap-4 mt-[4rem] w-full relative">
+    <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-10 gap-4 mt-[4rem] w-full relative">
       <div>
         <div className="flex gap-2 items-center mb-5">
           <div className="bg-black rounded-full h-[5px] w-[5px] p-1.5"></div>
@@ -78,9 +78,9 @@ const ProjectsCards = ({
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="w-full h-[40vw] bg-[#CACACB] rounded-lg"
+          className="w-full h-[60vh] md:h-[40vw] bg-[#CACACB] rounded-lg"
         ></motion.div>
-        <div className="flex gap-2 mt-5">
+        <div className="flex flex-wrap gap-2 mt-5">
           {project1Skills.map((tech, index) => (
             <span
               key={index}
@@ -88,19 +88,12 @@ const ProjectsCards = ({
             >
               {tech}
             </span>
-            // <ScrambleAnimate
-            //   content={tech}
-            //   key={index}
-            //   styleData={
-            //     "rounded-3xl text-sm cursor-pointer hover:bg-black hover:text-red-400 px-2 pt-1 pb-1 border-[2px] border-black font-['Rejouice_Headline']"
-            //   }
-            // />
           ))}
         </div>
       </div>
       <div
         ref={textRef}
-        className="absolute top-[45%] left-[45%] z-20 font-bold font-['MPS_Sans_Expressive'] text-[#cdea68] text-5xl"
+        className="absolute hidden md:visible top-[45%] left-[45%] z-20 font-bold font-['MPS_Sans_Expressive'] text-[#cdea68] text-5xl"
       ></div>
       <div>
         <div className="flex gap-2 items-center mb-5">
@@ -112,9 +105,9 @@ const ProjectsCards = ({
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="w-full h-[40vw] bg-black rounded-lg"
+          className="w-full  h-[60vh] md:h-[40vw] bg-black rounded-lg"
         ></motion.div>
-        <div className="flex gap-2 mt-5">
+        <div className="flex flex-wrap gap-2 mt-5">
           {project2Skills.map((tech, index) => (
             <span
               key={index}
@@ -122,13 +115,6 @@ const ProjectsCards = ({
             >
               {tech}
             </span>
-            // <ScrambleAnimate
-            //   content={tech}
-            //   key={index}
-            //   styleData={
-            //     "rounded-3xl text-sm cursor-pointer hover:bg-black hover:text-red-400 px-2 pt-1 pb-1 border-[2px] border-black font-['Rejouice_Headline']"
-            //   }
-            // />
           ))}
         </div>
       </div>
