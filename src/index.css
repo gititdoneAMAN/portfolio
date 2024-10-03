@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Rejouice Headline";
   src: local("Rejouice Headline"),
-    url(./fonts/Rejouice-Headline.ttf) format("ttf");
+    url("/fonts/Rejouice-Headline.ttf") format("truetype");
 }
 
 @font-face {
@@ -20,12 +20,12 @@
 @font-face {
   font-family: "MPS Sans Expressive";
   src: local("MPS Sans Expressive"),
-    url(./fonts/gfb9NgjXjiSNyuc0GSm78K8vJc.ttf) format("ttf");
+    url(./fonts/gfb9NgjXjiSNyuc0GSm78K8vJc.ttf) format("truetype");
 }
 @font-face {
   font-family: "MPS Sans Pixel";
   src: local("MPS Sans Pixel"),
-    url(./fonts/KUJdvGYsGxlU0r59P9m11lAWw.ttf) format("ttf");
+    url(./fonts/KUJdvGYsGxlU0r59P9m11lAWw.ttf) format("truetype");
 }
 
 .logo span {
