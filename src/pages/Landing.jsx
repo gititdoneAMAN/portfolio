@@ -122,7 +122,7 @@ const Landing = () => {
         <motion.img
           src={main4}
           alt="img"
-          className=" aspect-[5/6] object-cover w-full h-full"
+          className=" px-2 md:px-0 aspect-[5/6] object-cover w-full h-full"
           initial={{ z: 0 }}
           animate={{ rotateZ: 360 }}
           transition={{ repeat: Infinity, duration: 15 }}
