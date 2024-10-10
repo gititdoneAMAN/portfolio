@@ -37,25 +37,30 @@ const Projects = () => {
       </div>
       <ProjectsCards
         project1={"WALLET"}
-        project2={"BLOOM"}
+        project2={"DOUBT SOLVER"}
         project1Skills={["NextJS", "Express", "PostgresSQL"]}
-        project2Skills={["ReactJS", "Hono", "PostgresSQL"]}
+        project2Skills={[
+          "NextJS",
+          "NextAuth",
+          "PostgresSQL",
+          "LangChain",
+          "OpenAI",
+          "Supabase",
+        ]}
       />
       <ProjectsCards
         project1={"FARMSGET"}
-        project2={"QUERY"}
+        project2={"BLOOM"}
         project1Skills={["ReactJS", "Express", "MongoDB"]}
-        project2Skills={[
-          "NextJS",
-          "Express",
-          "PostgresSQL",
-          "LangChain",
-          "Cohere",
-          "Llama 3.1",
-        ]}
+        project2Skills={["ReactJS", "Hono", "PostgresSQL"]}
       />
       <div className="flex justify-center items-center mt-10">
-        <button className="flex items-center justify-between gap-2 mt-5 rounded-3xl px-5 py-3 md:px-5 md:py-3 w-[10rem] bg-black text-white">
+        <button
+          onClick={() =>
+            (window.location.href = "https://github.com/gititdoneAMAN")
+          }
+          className="flex items-center justify-between gap-2 mt-5 rounded-3xl px-5 py-3 md:px-5 md:py-3 w-[10rem] bg-black text-white"
+        >
           <ScrambleAnimate content={"VIEW MORE"} />
           <div className="w-4 h-4 rounded-full bg-white"></div>
         </button>

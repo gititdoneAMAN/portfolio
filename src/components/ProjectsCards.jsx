@@ -67,7 +67,7 @@ const ProjectsCards = ({
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-10 gap-4 mt-[4rem] w-full relative">
+    <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-10 gap-2 md:gap-4 mt-[4rem] w-full relative">
       <div>
         <div className="flex gap-2 items-center mb-5">
           <div className="bg-black rounded-full h-[5px] w-[5px] p-1.5"></div>
